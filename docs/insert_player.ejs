@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Insert Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Insert Player</h2>
+ 
+          <form action="create-player" method="POST">
+            <div class="form-group">
+              <label for="PlayerID">PlayerID</label>
+              <input type="text" class="form-control col-lg-9" id="PlayerID" aria-describedby="emailHelp" placeholder="Enter player id" name="PlayerID">
+            </div>
+            <div class="form-group">
+                <label for="Player_Name">Player Name</label>
+                <input type="text" class="form-control col-lg-9" id="Player_Name" aria-describedby="emailHelp" placeholder="Enter player name" name="Player_Name">
+              </div>
+            <div class="form-group">
+              <label for="Active_From">Active From</label>
+              <input type="text" class="form-control col-lg-9" id="Active_From" aria-describedby="emailHelp" placeholder="Enter active from" name="Active_From">
+            </div>
+            <div class="form-group">
+              <label for="Active_To">Active To</label>
+              <input type="text" class="form-control col-lg-9" id="Active_To" aria-describedby="emailHelp" placeholder="Enter active to" name="Active_To">
+            </div>
+            <div class="form-group">
+                <label for="Position">Position</label>
+                <input type="text" class="form-control col-lg-9" id="Position" aria-describedby="emailHelp" placeholder="Enter position" name="Position">
+              </div>  
+              <div class="form-group">
+                <label for="Height">Height</label>
+                <input type="text" class="form-control col-lg-9" id="Height" aria-describedby="emailHelp" placeholder="Enter Height" name="Height">
+              </div>         
+              <div class="form-group">
+                <label for="Weight">Weight</label>
+                <input type="text" class="form-control col-lg-9" id="Weight" aria-describedby="emailHelp" placeholder="Enter Weight" name="Weight">
+              </div>   
+              <div class="form-group">
+                <label for="Birth_Date">Birth Date</label>
+                <input type="text" class="form-control col-lg-9" id="Birth_Date" aria-describedby="emailHelp" placeholder="Enter Birth Date" name="Birth_Date">
+              </div>  
+              <div class="form-group">
+                <label for="Colleges">Colleges</label>
+                <input type="text" class="form-control col-lg-9" id="Colleges" aria-describedby="emailHelp" placeholder="Enter Colleges" name="Colleges">
+              </div>  
+            <button type="submit" class="btn btn-primary">Insert Into Player</button>
+          </form>
+    </div>
+  </div>
+  </body>
+</html>

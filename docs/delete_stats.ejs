@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Delete Stats For a Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Delete Stats For a Player</h2>
+ 
+          <form action="delete-stats" method="POST">
+            <div class="form-group">
+              <label for="PlayerID2">PlayerID2</label>
+              <input type="text" class="form-control col-lg-9" id="PlayerID2" aria-describedby="emailHelp" placeholder="Enter player id" name="PlayerID2">
+            </div>
+            <div class="form-group">
+              <label for="Year">Year</label>
+              <input type="text" class="form-control col-lg-9" id="Year" aria-describedby="emailHelp" placeholder="Enter Year" name="Year">
+            </div>
+              <div class="form-group">
+                <label for="minutes_played">minutes_played</label>
+                <input type="text" class="form-control col-lg-9" id="minutes_played" aria-describedby="emailHelp" placeholder="Enter minutes_played" name="minutes_played">
+              </div>         
+            <button type="submit" class="btn btn-primary">delete Into PlayerStats</button>
+          </form>
+    </div>
+  </div>
+  </body>
+</html>

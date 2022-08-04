@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Team Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Team Search</h2>
+ 
+          <form action="team-search" method="POST">
+            <div class="form-group">     
+            <div class="form-group">
+              <label for="exampleInputEmail1">Team_Name</label>
+              <textarea name="Team_Name" class="form-control col-lg-9"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Search Team_Name</button>
+          </form>
+          <br>
+          <br>
+          <form action="query1" method="POST">
+            <button type="submit" class="btn btn-primary">advanced query1</button>
+          </form>
+          <br>
+          <form action="query2" method="POST">
+            <button type="submit" class="btn btn-primary">advanced query2</button>
+          </form>
+
+    </div>
+  </div>
+  </body>
+</html>

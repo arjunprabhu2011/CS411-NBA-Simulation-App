@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Insert Stats</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Insert Stats</h2>
+ 
+          <form action="create-stats" method="POST">
+            <div class="form-group">
+              <label for="PlayerID2">PlayerID2</label>
+              <input type="text" class="form-control col-lg-9" id="PlayerID2" aria-describedby="emailHelp" placeholder="Enter player id" name="PlayerID2">
+            </div>
+            <div class="form-group">
+                <label for="TeamID">TeamID</label>
+                <input type="text" class="form-control col-lg-9" id="TeamID" aria-describedby="emailHelp" placeholder="Enter TeamID" name="TeamID">
+              </div>
+            <div class="form-group">
+              <label for="Year">Year</label>
+              <input type="text" class="form-control col-lg-9" id="Year" aria-describedby="emailHelp" placeholder="Enter Year" name="Year">
+            </div>
+            <div class="form-group">
+              <label for="age">age</label>
+              <input type="text" class="form-control col-lg-9" id="age" aria-describedby="emailHelp" placeholder="Enter age" name="age">
+            </div>
+            <div class="form-group">
+                <label for="games_played">games_played</label>
+                <input type="text" class="form-control col-lg-9" id="games_played" aria-describedby="emailHelp" placeholder="Enter games_played" name="games_played">
+              </div>  
+              <div class="form-group">
+                <label for="minutes_played">minutes_played</label>
+                <input type="text" class="form-control col-lg-9" id="minutes_played" aria-describedby="emailHelp" placeholder="Enter minutes_played" name="minutes_played">
+              </div>         
+              <div class="form-group">
+                <label for="PTS">PTS</label>
+                <input type="text" class="form-control col-lg-9" id="PTS" aria-describedby="emailHelp" placeholder="Enter PTS" name="PTS">
+              </div>   
+              <div class="form-group">
+                <label for="AST">AST</label>
+                <input type="text" class="form-control col-lg-9" id="AST" aria-describedby="emailHelp" placeholder="Enter AST" name="AST">
+              </div>  
+              <div class="form-group">
+                <label for="turnovers">turnovers</label>
+                <input type="text" class="form-control col-lg-9" id="turnovers" aria-describedby="emailHelp" placeholder="Enter turnovers" name="turnovers">
+              </div>  
+              <div class="form-group">
+                <label for="FG">FG</label>
+                <input type="text" class="form-control col-lg-9" id="FG" aria-describedby="emailHelp" placeholder="Enter FG" name="FG">
+              </div>
+              <div class="form-group">
+                <label for="FT">FT</label>
+                <input type="text" class="form-control col-lg-9" id="FT" aria-describedby="emailHelp" placeholder="Enter FT" name="FT">
+              </div>
+              <div class="form-group">
+                <label for="_3P">_3P</label>
+                <input type="text" class="form-control col-lg-9" id="_3P" aria-describedby="emailHelp" placeholder="Enter 3P" name="_3P">
+              </div>
+              <div class="form-group">
+                <label for="_3P_Attempt">_3P_Attempt</label>
+                <input type="text" class="form-control col-lg-9" id="_3P_Attempt" aria-describedby="emailHelp" placeholder="Enter _3P_Attempt" name="_3P_Attempt">
+              </div>
+              <div class="form-group">
+                <label for="ORB">ORB</label>
+                <input type="text" class="form-control col-lg-9" id="ORB" aria-describedby="emailHelp" placeholder="Enter ORB" name="ORB">
+              </div>
+              <div class="form-group">
+                <label for="DRB">DRB</label>
+                <input type="text" class="form-control col-lg-9" id="DRB" aria-describedby="emailHelp" placeholder="Enter DRB" name="DRB">
+              </div>
+              <div class="form-group">
+                <label for="PF">PF</label>
+                <input type="text" class="form-control col-lg-9" id="PF" aria-describedby="emailHelp" placeholder="Enter PF" name="PF">
+              </div>
+            <button type="submit" class="btn btn-primary">Insert Into PlayerStats</button>
+          </form>
+    </div>
+  </div>
+  </body>
+</html>

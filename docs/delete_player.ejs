@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Delete Player</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  </head>
+
+  <body>
+    <div class="container mt-4">
+      <div class="card">
+        <div class="card-body">
+          <% if (messages.success) { %>
+              <p class="alert alert-success m2-4 mb-2"><%- messages.success %></p>
+          <% } %>  
+ 
+          <h2>Delete Player</h2>
+ 
+          <form action="delete-player" method="POST">
+            <div class="form-group">
+              <label for="PlayerID2">PlayerID2</label>
+              <input type="text" class="form-control col-lg-9" id="PlayerID2" aria-describedby="emailHelp" placeholder="Enter player id" name="PlayerID2">
+            </div> 
+            <button type="submit" class="btn btn-primary">delete player</button>
+          </form>
+    </div>
+  </div>
+  </body>
+</html>
